@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <title>Gambit's Gourmet Gateaux</title>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='Gambit.png')}}" alt="Cupcake chef Gambit sketch with one of his creations" id="logo">
+        <nav>
+          <ul>
+            <li><a href="/menu" id="menu">Menu</a></li>
+            <li><a href="/cart"><img src="{{url_for('static', filename='cart.png')}}" alt="Cart" id="cart"></a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <div class="cupcake-gif">
+            <img src="{{url_for('static', filename='0KFc3Mm - Imgur.gif')}}" alt="">
+        </div>
+    </main>
+
+
+      <footer>
+        <a href="contact.html">Contact Us</a>
+      </footer>
+</body>
+</html>

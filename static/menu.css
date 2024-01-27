@@ -1,0 +1,133 @@
+body {
+    background-color: #F6F3EF;
+}
+header img {
+    height: 800px;
+    width: 800px;
+}
+
+#home {
+    position: fixed;
+    top: 1px;
+    left: 375px;
+}
+
+/* section img {
+    position: relative;
+    height: 200px;
+} */
+/*
+#berry {
+    position: relative;
+    height: 200px;
+    bottom: 900px;
+    left: 800px;
+}
+
+#caramel {
+    position: relative;
+    height: 250px;
+    bottom: 850px;
+    left: 790px;
+}
+
+#cherry {
+    position: relative;
+    height: 250px;
+    bottom: 850px;
+    left: 786px;
+}
+
+#coconut {
+    position: relative;
+    height: 250px;
+    width: 15%;
+    bottom: 376px;
+    left: 232px;
+}
+
+#crunch {
+    position: relative;
+    height: 250px;
+    width: 45%;
+    bottom: 600px;
+    left: 195px
+}
+
+#hazel {
+    position: relative;
+    height: 270px;
+    bottom: 1150px;
+    left: 1350px;
+}
+
+#lemon {
+    position: relative;
+    height: 273px;
+    bottom: 928px;
+    left: 612px;
+}
+
+#mint {
+    position: relative;
+    height: 300px;
+    bottom: 600px;
+    left: 650px;
+} */
+
+.slideshow-container {
+    max-width: 384px;
+    position: relative;
+    bottom: 800px;
+    left: 360px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 25vw;
+    height: 25vw;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#cart {
+    position: relative;
+    bottom: 802px;
+    height: 30px;
+    width: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px;
+}

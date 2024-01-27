@@ -1,0 +1,9 @@
+image,size,name,flavor,price,gluten,limited,calories,frosting
+cherry.jpg,mini,Cherry Almond Euphoria,Almond Cake,1.68,False,False,130,[]
+caramel-swirl.jpg,mini,Caramel Swirl Delight,Chocolate,1.98,False,False,185,"['Caramel', 'Cream']"
+lemon.jpg,Regular,Zesty Lemon Meringue Burst,Yellow Cake,2.48,True,False,260,['Lemon Meringue']
+mint.PNG,Regular,Midnight Mint Madness,Chocolate/Mint,2.88,False,True,320,['Peppermint']
+coconut.jpg,Regular,Tropical Coconut Dream,White Cake,2.48,True,True,220,['Coconut']
+hazel.jpg,Regular,Hazelnut Heaven Surprise,Hazelnut Cake,2.48,False,False,200,[]
+berry.jpg,Large,Velvet Raspberry Bliss,Velvet Cake,3.28,True,True,300,['Raspberry']
+crunch.jpg,Large,Salted Caramel Crunch Delight,Almond Cake,3.28,False,False,300,['Caramel']

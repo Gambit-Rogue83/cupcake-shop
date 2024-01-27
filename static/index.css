@@ -1,0 +1,37 @@
+body {
+    background-color: #F6F3EF;
+}
+
+header img {
+    height: 800px;
+}
+
+.cupcake-gif {
+    position: relative;
+    bottom: 600px;
+    left: 1050px;
+    width: 2000px;
+    height: auto;
+}
+
+#cart {
+    position: relative;
+    bottom: 820px;
+    height: 30px;
+}
+
+#menu {
+    position: relative;
+    bottom: 800px;
+    left: 760px
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px;
+}

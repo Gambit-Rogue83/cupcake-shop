@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='cart.css')}}">
+    <title>Gambit's Gourmet Gateaux</title>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='Gambit.png')}}" alt="Cupcake chef Gambit sketch with one of his creations" id="logo">
+        <nav>
+          <ul>
+            <li><a href="/menu" id="menu">Menu</a></li>
+            <li><a href="/" id="home">Home</a></li>
+            <li><a href="/cart"><img src="{{url_for('static', filename='cart.png')}}" alt="Cart" id="cart"></a></li>
+          </ul>
+        </nav>
+      </header>
+
+<main class="display">
+
+        <h2>Order Items</h2>
+        <table class="table table-bordered" id="cupcake-order">
+            <th>
+                <h5>Cupcake</h5>
+            </th>
+            <th>
+                <h5>Price</h5>
+            </th>
+            <th>
+                <h5>Quantity</h5>
+            </th>
+            {% for cupcake in cupcakes %}
+            <tr>
+                <td>
+                    <h6>{{ cupcake[0] }}</h6>
+                </td>
+                <td>
+                    <h6>Price: {{ cupcake[1] }}</h6>
+                </td>
+                <td>
+                    <h6>Qty: {{ cupcake[2] }}</h6>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+</main>
+
+
+      <footer>
+        <a href="contact.html">Contact Us</a>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+size,name,flavor,price,gluten,limited,calories,frosting
+mini,Cherry Almond Euphoria,Almond Cake,1.68,False,False,130,[]
+mini,Caramel Swirl Delight,Chocolate,1.98,False,False,185,"['Caramel', 'Cream']"
+Regular,Zesty Lemon Meringue Burst,Yellow Cake,2.48,True,False,260,['Lemon Meringue']
+Regular,Midnight Mint Madness,Chocolate/Mint,2.88,False,True,320,['Peppermint']
+Regular,Tropical Coconut Dream,White Cake,2.48,True,True,220,['Coconut']
+Regular,Hazelnut Heaven Surprise,Hazelnut Cake,2.48,False,False,200,[]
+Large,Velvet Raspberry Bliss,Velvet Cake,3.28,True,True,300,['Raspberry']
+Large,Salted Caramel Crunch Delight,Almond Cake,3.28,False,False,300,['Caramel']

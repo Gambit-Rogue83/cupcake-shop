@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='menu.css')}}">
+    <title>Gambit's Gourmet Gateaux</title>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='Gambit.png')}}" alt="Cupcake chef Gambit sketch with one of his creations" id="logo">
+        <nav>
+          <ul>
+            <li><a href="/" id="home">Home</a></li>
+            <li><a href="/cart"><img src="{{url_for('static', filename='cart.png')}}" alt="Cart" id="cart"></a></li>
+          </ul>
+        </nav>
+      </header>
+
+<div class="slideshow-container">
+    {% for package in images %}
+          <div class="mySlides fade">
+              <img src="{{url_for('static', filename=package['image'])}}" alt="{{ image }}">
+              <h2>{{ package["name"] }}</h2>
+              <h4><b>Price: ${{ package["price"] }}</b></h4>
+              <a href="{{url_for('add_cupcake', name=package['name'])}}">
+                  <button class="add-to-cart">Add to Cart</button>
+              </a>
+          </div>
+    {% endfor %}
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+      <!-- <section class="cupcake-items"> -->
+        <!-- <img src="{{url_for('static', filename='berry.jpg')}}" alt="raspberry velvet cupcake" id="berry"> -->
+        <!-- <img src="{{url_for('static', filename='caramel-swirl.jpg')}}" alt="caramel swirl cupcake" id="caramel"> -->
+        <!-- <img src="{{url_for('static', filename='cherry.jpg')}}" alt="cherry almond cupcake" id="cherry"> -->
+        <!-- <img src="{{url_for('static', filename='coconut.jpg')}}" alt="tropical coconut dream" id="coconut"> -->
+        <!-- <img src="{{url_for('static', filename='crunch.jpg')}}" alt="salted caramel crunch" id="crunch"> -->
+        <!-- <img src="{{url_for('static', filename='hazel.jpg')}}" alt="hazelnut heaven" id="hazel"> -->
+        <!-- <img src="{{url_for('static', filename='lemon.jpg')}}" alt="zesty lemon meringue" id="lemon"> -->
+        <!-- <img src="{{url_for('static', filename='mint.PNG')}}" alt="midnight mint madness" id="mint"> -->
+      <!-- </section> -->
+
+      <footer>
+        <a href="contact.html">Contact Us</a>
+      </footer>
+<script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
